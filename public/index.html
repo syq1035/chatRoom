@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>聊天室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media=" (min-width: 600px)" href="./css/mainpc.css" />
+    <link rel="stylesheet" type="text/css" media=" (max-width: 600px)" href="./css/mainm.css" />
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="all">
+        <div class="name">
+            <input type="text" id="name" placeholder="请输入昵称. . .">
+            <button id="namesubmit">确定</button>
+        </div>
+        <div class="main">
+            <div class="header">
+                <img src="./image/user0.jpg" alt="头像">
+                聊天室
+                <p id="onlineShow"><span id="signer">Ⓥ</span> <span id="num">0</span>人在线</p>
+            </div>
+            <div class="showInfo">
+                <div class="massage">
+                    <div class="chatRecord"></div>
+                    <div class="sendmassage">
+                        <form action="">
+                            <div class="edit">
+                                <input type="color" id="color" value="#000000">
+                                <i title="双击取消选择" class="fa fa-smile-o" id="smile"></i>
+                                <i title="双击取消选择" class="fa fa-picture-o" id="img"></i>
+                                <!-- <div class="selectBox">
+                                    <div class="smile"></div>
+                                    <div class="img"></div>
+                                </div> -->
+                            </div>
+                            <textarea name="mas" id="mas"></textarea>
+                            <button class="btn" id="submit">发送</button>
+                            <button class="btn" id="close">关闭</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="onlineMember">
+                    <h1>在线成员<span id="num">0</span></h1>
+                    <ul id="users"></ul>
+                    <p>当前无好友在线！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 加载全局io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/main.js"></script>    
+</body>
+</html>

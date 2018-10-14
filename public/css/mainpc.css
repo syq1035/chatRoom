@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../image/bg.jpg);
+    background-size: cover;
+}
+.name{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    padding-top: 35vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color:rgba(238, 238, 238, 0.8);
+    text-align: center;
+}
+.name input{
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid #bbb;
+    background-color: #f3f3f3;
+    font-size: 23px;
+    color: #555;
+    text-align: center;
+}
+.name button{
+    display: block;
+    width: 107px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #805b6b;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 705px;
+    height: 556px;
+    margin: 10vh auto;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    box-shadow: 3px 5px 9px #ccc;
+    background-color: rgba(255, 255, 255, 1);
+}
+.header{
+    height: 76px;
+    width: 100%;
+    padding: 1%;
+    border-bottom: 2px solid #eee;
+    font-size: 23px;
+}
+.header img{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    vertical-align: middle;
+}
+#onlineShow{
+    display: none;
+}
+.showInfo{
+    display: flex;
+    flex-direction: row;
+    height: 480px;
+}
+.massage{
+    width: 70%;
+    border-right: 2px solid #eee;
+}
+.chatRecord{
+    height: 350px;
+    border-bottom: 2px solid #eee;
+}
+.sendmassage{
+    height: 130px;
+    width: 100%;
+}
+/* sendmassege */
+.edit{
+    height: 30px;
+}
+.edit i {
+    padding: 5px 6px;
+}
+#color{
+    width: 25px;
+    margin-left: 10px;
+    border: none;
+    background: none;
+}
+textarea{
+    width: 100%;
+    height: 65px;
+    display: block;
+    border: none;
+    resize: none;
+    background: none;
+}
+textarea:focus, .btn:focus, .name input:focus, .name button:focus{
+    outline: none;
+}
+button.btn {
+    width: 72px;
+    height: 25px;
+    float: right;
+    border: none;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: #805b6b;
+}
+/* sendmassege */
+
+.onlineMember{
+    width: 30%;
+    padding: 8px;
+}
+.onlineMember h1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.onlineMember p {
+    text-align: center;
+    margin-top: 70px;
+    color: #555;
+}
+
+
